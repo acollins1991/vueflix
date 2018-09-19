@@ -1,5 +1,7 @@
 # vueflix
 
+Netflix web app clone built with Vue.js, Vuex + Firebase, Vue-Router, Nightwatch
+
 ## Project setup
 ```
 npm install
