@@ -12,6 +12,9 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  mounted(){
+    this.$APIRequest.get('list/1', {test:'test'})
   }
 }
 </script>
