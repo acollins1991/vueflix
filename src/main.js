@@ -3,9 +3,18 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
 import './registerServiceWorker'
-/* import plugin axios requests, accessible via APIRequest.get(endpoint, paramsobject) */
+/* import APIRequest class, assign to window object, and create vue mixin */
 import APIRequest from './utils/APIRequest'
-Vue.use(APIRequest)
+window.$APIRequest = new APIRequest()
+Vue.mixin({
+  data: function(){
+    return {
+      get APIRequest() {
+        return window.$APIRequest.instance()
+      }
+    }
+  }
+})
 
 Vue.config.productionTip = false
 
