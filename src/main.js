@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
 import './registerServiceWorker'
-/* import APIRequest class, assign to window object, and create vue mixin */
+/* import APIRequest class which creates axios instance, assign to window object, and create vue mixin */
 import APIRequest from './utils/APIRequest'
 window.$APIRequest = new APIRequest()
 Vue.mixin({
