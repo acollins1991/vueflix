@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
+/* Implement Bootstrap-Vue */
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue);
 import './registerServiceWorker'
 /* import APIRequest class which creates axios instance, assign to window object, and create vue mixin */
 import APIRequest from './utils/APIRequest'
