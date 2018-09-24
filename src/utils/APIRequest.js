@@ -9,6 +9,10 @@ class APIRequestClass {
 
   constructor(endpoint, parameters) {
 
+  }
+
+  get(endpoint, parameters) {
+
     // get endpoint
     this.endpoint = endpoint
     // get parameters object
@@ -22,10 +26,6 @@ class APIRequestClass {
     // stringify parameters
     this.paramsString = qs.stringify(this.params)
 
-  }
-
-  get(endpoint) {
-
     // construct config
     this.config = {
       method: 'get',
@@ -34,8 +34,18 @@ class APIRequestClass {
     }
 
     axios(this.config)
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error))
+      .then(result => {
+        if(process.env.NODE_ENV === 'development') {
+          console.log(result)
+        }
+        return result
+      })
+      .catch(error => {
+        if(process.env.NODE_ENV === 'development') {
+          console.log(error)
+        }
+        return Promise.reject(error)
+      });
 
   }
 
