@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
     "lodash": "^4.17.11",
     "qs": "^6.5.2",
     "register-service-worker": "^1.0.0",
