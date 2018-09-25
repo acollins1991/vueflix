@@ -1,5 +1,7 @@
 module.exports = {
-  build: {
-    assetsPublicPath: '/vueflix/'
+  configureWebpack: {
+    output: {
+      assetsPublicPath: '/vueflix/'
+    }
   }
 }
