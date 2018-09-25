@@ -2,7 +2,9 @@
 
 Netflix web app clone built with Vue.js, Vuex + Firebase, Vue-Router, Nightwatch
 
-Project sturcutre based on https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
+Project structure based on https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
+
+Demo: https://acollins1991.github.io/vueflix/#/
 
 ## Project setup
 ```
