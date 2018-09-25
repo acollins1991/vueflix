@@ -1,17 +1,18 @@
 <template>
-<div class="home">
-  Home
+<div>
+
+  <Slider v-for="(genre, index) in this.$store.getters.allCategories" v-bind:key="index" v-bind:genreInfo="genre" />
+
 </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Slider from '@/components/Slider.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Slider
   }
 }
 </script>

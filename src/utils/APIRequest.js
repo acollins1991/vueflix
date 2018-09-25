@@ -15,9 +15,10 @@ export default class APIRequest {
         return qs.stringify(params)
       }
     })
-    // set 'api_key' param
+    // set 'api_key' and 'language' param
     axiosRequest.defaults.params = {}
     axiosRequest.defaults.params['api_key'] = apiKey
+    axiosRequest.defaults.params['language'] = 'en-US'
     // make instance available under this.axiosRequest
     this.axiosRequest = axiosRequest
 
