@@ -1,0 +1,18 @@
+.AppHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s;
+
+  &--top {
+    background-color: transparent;
+    background-color: $dark;
+  }
+
+  &__nav {
+    font-size:14px;
+  }
+
+}
