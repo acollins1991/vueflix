@@ -22,6 +22,7 @@ export default {
     var self = this
     this.APIRequest.get('/genre/movie/list')
       .then((response) => {
+        console.log(response)
         self.$store.state.categories.movies = response.data.genres
       })
     this.APIRequest.get('/genre/tv/list')
