@@ -1,17 +1,18 @@
 <template>
-<div class="home">
-  Home
+<div>
+
+  <AppSlider v-for="(genre, index) in this.$store.getters.allCategories" v-bind:key="index" v-bind:sliderInfo="genre" />
+
 </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import AppSlider from '@/components/AppSlider.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    AppSlider
   }
 }
 </script>

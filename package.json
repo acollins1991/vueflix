@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "axios-jsonp": "^1.0.2",
     "bootstrap-vue": "^2.0.0-rc.11",
     "i": "^0.3.6",
     "lodash": "^4.17.11",
