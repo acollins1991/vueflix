@@ -1,18 +1,18 @@
 <template>
 <div>
 
-  <Slider v-for="(genre, index) in this.$store.getters.allCategories" v-bind:key="index" v-bind:genreInfo="genre" />
+  <AppSlider v-for="(genre, index) in this.$store.getters.allCategories" v-bind:key="index" v-bind:genreInfo="genre" />
 
 </div>
 </template>
 
 <script>
-import Slider from '@/components/Slider.vue'
+import AppSlider from '@/components/AppSlider.vue'
 
 export default {
   name: 'home',
   components: {
-    Slider
+    AppSlider
   }
 }
 </script>
