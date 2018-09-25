@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
+/* Implement font awesome with vue */
 /* Implement Bootstrap-Vue */
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);

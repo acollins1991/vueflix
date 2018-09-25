@@ -1,21 +1,21 @@
 <template>
 <div id="app">
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <AppHeader/>
   <router-view />
-  <div class="footer">
-    <TMDBLogo/>
-  </div>
+  <AppFooter/>
+  <TMDBLogo/>
 </div>
 </template>
 
 <script>
+import AppHeader from '@/components/Global/AppHeader.vue'
+import AppFooter from '@/components/Global/AppFooter.vue'
 import TMDBLogo from '@/components/Global/TMDBLogo.vue'
 
 export default {
   components: {
+    AppHeader,
+    AppFooter,
     TMDBLogo
   }
 }
