@@ -1,7 +1,5 @@
 module.exports = {
-  configureWebpack: {
-    output: {
-      assetsPublicPath: '/vueflix/'
-    }
-  }
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/vueflix/'
+    : '/'
 }
