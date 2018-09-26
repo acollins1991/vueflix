@@ -16,7 +16,7 @@ export default class APIRequest {
         language: 'en-US'
       },
       paramsSerializer: function(params) {
-        return Qs.stringify(params)
+        return qs.stringify(params)
       }
     })
     // make instance available under this.axiosRequest
