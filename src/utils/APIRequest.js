@@ -10,15 +10,14 @@ export default class APIRequest {
 
     // custom instance defaults
     let axiosRequest = axios.create({
-      withCredentials: false,
       baseURL: apiBase,
       params: {
         api_key: apiKey,
         language: 'en-US'
       },
       paramsSerializer: function(params) {
-        return qs.stringify(params)
-      },
+        return Qs.stringify(params)
+      }
     })
     // make instance available under this.axiosRequest
     this.axiosRequest = axiosRequest
