@@ -5,12 +5,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    categories: {
+      movies: [],
+      tv: []
+    }
   },
-  mutations: {
+  getters: {
+    allCategories(state){
 
-  },
-  actions: {
+      const movies = state.categories.movies
+      const tv = state.categories.tv
+      const all = movies.concat(tv)
 
+      return all
+
+    }
   }
 })

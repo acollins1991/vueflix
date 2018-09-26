@@ -1,9 +1,9 @@
 <template>
 <div id="app">
-  <AppHeader/>
+  <AppHeader />
   <router-view />
-  <AppFooter/>
-  <TMDBLogo/>
+  <AppFooter />
+  <TMDBLogo />
 </div>
 </template>
 
@@ -17,6 +17,18 @@ export default {
     AppHeader,
     AppFooter,
     TMDBLogo
+  },
+  mounted() {
+    var self = this
+    this.APIRequest.get('/genre/movie/list')
+      .then((response) => {
+        console.log(response)
+        self.$store.state.categories.movies = response.data.genres
+      })
+    this.APIRequest.get('/genre/tv/list')
+      .then((response) => {
+        self.$store.state.categories.tv = response.data.genres
+      })
   }
 }
 </script>

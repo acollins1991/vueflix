@@ -1,13 +1,13 @@
 <template>
-  <div>
-    API testing
-  </div>
+<div>
+  API testing
+</div>
 </template>
 
 <script>
 export default {
   name: 'APITesting',
-  data(){
+  data() {
     return {
       movies: ''
     }
@@ -16,8 +16,12 @@ export default {
     this.getMovies()
   },
   methods: {
-    async getMovies(){
-      this.movies = await this.APIRequest.get("list/1")
+    async getMovies() {
+      this.movies = await this.APIRequest.get("list/1", {
+        params: {
+          test: 1
+        }
+      })
         .then((response) => {
           return response.data
         })
