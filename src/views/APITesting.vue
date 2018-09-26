@@ -17,12 +17,14 @@ export default {
   },
   methods: {
     async getMovies() {
-      this.movies = await this.APIRequest.get("list/1", {
+      this.movies = await this.APIRequest('/discover/movie/', {
         params: {
-          test: 1
+          sort_by: 'popularity.desc',
+          page: 1
         }
       })
         .then((response) => {
+          console.log(response)
           return response.data
         })
     }

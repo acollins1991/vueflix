@@ -1,5 +1,4 @@
 import axios from 'axios'
-import jsonpAdapter from 'axios-jsonp'
 import qs from 'qs'
 
 const apiBase = 'https://api.themoviedb.org/3/'
@@ -11,13 +10,15 @@ export default class APIRequest {
 
     // custom instance defaults
     let axiosRequest = axios.create({
+      withCredentials: false,
       baseURL: apiBase,
       params: {
         api_key: apiKey,
         language: 'en-US'
       },
-      adapter: jsonpAdapter,
-      jsonpCallback: 'test'
+      paramsSerializer: function(params) {
+        return qs.stringify(params)
+      },
     })
     // make instance available under this.axiosRequest
     this.axiosRequest = axiosRequest
