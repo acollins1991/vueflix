@@ -10,6 +10,7 @@ export default class APIRequest {
 
     // custom instance defaults
     let axiosRequest = axios.create({
+      crossDomain: true,
       baseURL: apiBase,
       params: {
         api_key: apiKey,

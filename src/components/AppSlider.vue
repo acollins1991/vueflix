@@ -112,6 +112,7 @@ export default {
   },
   mounted() {
 
+    /* to be uncommented once ajax call is fixed
     // get movies/tv
     this.media = this.APIRequest('/discover/movie/', {
       method: 'get',
@@ -122,6 +123,7 @@ export default {
     }).then((response) => {
       return result
     })
+    */
 
   }
 }
