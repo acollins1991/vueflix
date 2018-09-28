@@ -1,0 +1,13 @@
+.AppBanner {
+  height:calc(100vh + 80px);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 120px;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__content-wrapper{
+    width:40%;
+    min-width:300px;
+  }
+}

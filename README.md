@@ -46,4 +46,5 @@ npm run deploy
 - [ ] Finish footer component
 - [ ] Finish slider component
 - [ ] Finish banner component
-- [ ] Optimisations
+- [ ] Write e2e tests
+- [ ] General optimisations
