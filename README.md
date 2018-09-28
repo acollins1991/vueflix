@@ -35,5 +35,15 @@ npm run test:e2e
 
 ### Deploy to Github Pages (custom settings required)
 ```
-npm run deploy 
+npm run deploy
 ```
+
+# Todos
+- [X] Setup project architecture
+- [X] Add TMDB logo
+- [ ] Fix api request functionality
+- [ ] Finish header nav component
+- [ ] Finish footer component
+- [ ] Finish slider component
+- [ ] Finish banner component
+- [ ] Optimisations
