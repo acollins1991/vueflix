@@ -5,7 +5,7 @@
 
     <div class="d-flex">
 
-      <img class="mr-3" src="https://via.placeholder.com/93x31">
+      <img class="mr-4" src="https://via.placeholder.com/93x31">
 
       <b-nav class="AppHeader__nav">
         <b-nav-item active>Active</b-nav-item>
@@ -40,8 +40,6 @@ export default {
 
     window.addEventListener('scroll', function(e) {
 
-      setTimeout(function(){
-
         var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
 
         if (scrollTop > 0) {
@@ -49,8 +47,6 @@ export default {
         } else {
           header.classList.remove(classname)
         }
-
-      }, 100)
 
     })
   }

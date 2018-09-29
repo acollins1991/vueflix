@@ -1,9 +1,16 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-
 // Import custom font from Google
 @import url('https://fonts.googleapis.com/css?family=Kanit:400,600');
 $font-family-base: 'Kanit', sans-serif;
 
+// custom colours
+$dark: #141414;
+
 // nav links
 $nav-link-padding-x: .5rem;
 $nav-link-padding-y: .5rem;
+
+//
+$enable-rounded: false;
+
+// import bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

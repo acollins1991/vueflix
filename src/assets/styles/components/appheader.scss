@@ -4,11 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  transition: background-color 0.5s;
+  transition: background-color 0.65s;
   background-color: transparent;
 
   &--top {
-    background-color: transparent;
     background-color: $dark;
   }
 
