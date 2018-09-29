@@ -32,6 +32,27 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  mounted() {
+
+    let header = document.getElementsByClassName('AppHeader')[0]
+    const classname = 'AppHeader--top'
+
+    window.addEventListener('scroll', function(e) {
+
+      setTimeout(function(){
+
+        var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+
+        if (scrollTop > 0) {
+          header.classList.add(classname)
+        } else {
+          header.classList.remove(classname)
+        }
+
+      }, 100)
+
+    })
+  }
 }
 </script>
