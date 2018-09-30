@@ -1,5 +1,5 @@
 <template>
-  <div class="AppFooter">
+  <div class="AppFooter pb-4">
     <b-container>
 
       <b-nav>
