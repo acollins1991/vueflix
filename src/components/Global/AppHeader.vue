@@ -46,13 +46,13 @@ export default {
 
     window.addEventListener('scroll', function(e) {
 
-        var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+      var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
 
-        if (scrollTop > 0) {
-          header.classList.add(classname)
-        } else {
-          header.classList.remove(classname)
-        }
+      if (scrollTop > 0) {
+        header.classList.add(classname)
+      } else {
+        header.classList.remove(classname)
+      }
 
     })
   }
