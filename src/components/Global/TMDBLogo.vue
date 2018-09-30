@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 text-center">
+  <div class="bg-white p-4 text-center">
     <img src="@/assets/powered-by-tmdb.png">
   </div>
 </template>
