@@ -11,7 +11,7 @@
     </div>
 
     <div class="AppBanner__text">
-      <h2 class="h5">Header text for banner media</h2>
+      <h2 class="h5 mb-1">Header text for banner media</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 
