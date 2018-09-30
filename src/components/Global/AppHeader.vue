@@ -8,10 +8,11 @@
       <img class="mr-4" src="https://via.placeholder.com/93x31">
 
       <b-nav class="AppHeader__nav">
-        <b-nav-item active>Active</b-nav-item>
-        <b-nav-item>Link</b-nav-item>
-        <b-nav-item>Another Link</b-nav-item>
-        <b-nav-item disabled>Disabled</b-nav-item>
+        <b-nav-item>Home</b-nav-item>
+        <b-nav-item>Series</b-nav-item>
+        <b-nav-item>Filmes</b-nav-item>
+        <b-nav-item>Recently Added</b-nav-item>
+        <b-nav-item>My List</b-nav-item>
       </b-nav>
 
     </div>
@@ -19,9 +20,14 @@
     <div>
       <b-nav>
         <b-nav-item active>Icon</b-nav-item>
-        <b-nav-item>Children</b-nav-item>
+        <b-nav-item class="text-uppercase">Children</b-nav-item>
         <b-nav-item>Icon</b-nav-item>
-        <b-nav-item>Avatar dropdown</b-nav-item>
+        <b-nav-item-dropdown text="Lang" right>
+          <b-dropdown-item href="#">EN</b-dropdown-item>
+          <b-dropdown-item href="#">ES</b-dropdown-item>
+          <b-dropdown-item href="#">RU</b-dropdown-item>
+          <b-dropdown-item href="#">FA</b-dropdown-item>
+        </b-nav-item-dropdown>
       </b-nav>
     </div>
 
