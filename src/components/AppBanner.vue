@@ -3,7 +3,7 @@
 
   <div class="AppBanner__content-wrapper">
 
-    <img class="AppBanner__logo d-block mb-4" src="https://via.placeholder.com/200x200">
+    <img class="AppBanner__logo d-block mb-4" src="https://via.placeholder.com/200x150">
 
     <div class="AppBanner__buttons mb-4">
       <b-button>(ICON) Play</b-button>
