@@ -1,18 +1,18 @@
 <template>
 <div class="AppHeader">
 
-  <div class="d-flex justify-content-between align-items-center px-5 py-3">
+  <nav class="d-flex justify-content-between align-items-center px-5 py-3 text-white">
 
     <div class="d-flex">
 
       <img class="mr-4" src="https://via.placeholder.com/93x31">
 
       <b-nav class="AppHeader__nav">
-        <b-nav-item>Home</b-nav-item>
-        <b-nav-item>Series</b-nav-item>
-        <b-nav-item>Filmes</b-nav-item>
-        <b-nav-item>Recently Added</b-nav-item>
-        <b-nav-item>My List</b-nav-item>
+        <b-nav-item to="/">Home</b-nav-item>
+        <b-nav-item to="/series">Series</b-nav-item>
+        <b-nav-item to="/films">Films</b-nav-item>
+        <b-nav-item to="/recently-added">Recently Added</b-nav-item>
+        <b-nav-item to="/my-list">My List</b-nav-item>
       </b-nav>
 
     </div>
@@ -31,7 +31,7 @@
       </b-nav>
     </div>
 
-  </div>
+  </nav>
 
 </div>
 </template>

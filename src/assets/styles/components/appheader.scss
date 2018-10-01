@@ -13,5 +13,20 @@
 
   &__nav {
     font-size: 14px;
+
+    a {
+      transition: color 0.4s;
+      color: #e5e5e5;
+
+      &:hover {
+        color: #b3b3b3;
+      }
+
+      &.active {
+        font-weight:bold;
+        color:#ffffff;
+      }
+
+    }
   }
 }
