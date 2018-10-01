@@ -1,7 +1,7 @@
 <template>
 <div class="AppSlider mb-4">
   <div class="px-5">
-    {{sliderInfo.name}}
+    <h2 class="h5 text-white">{{sliderInfo.name}}</h2>
     <tiny-slider :items="5" :gutter="100">
       <div>Slider item #1</div>
       <div>Slider item #2</div>
